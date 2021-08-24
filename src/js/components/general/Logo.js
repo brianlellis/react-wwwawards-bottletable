@@ -1,4 +1,4 @@
-function Logo() {
+export default function Logo() {
   return (
     <div className="site_logo">
       <p className="top">BOT</p>
@@ -6,5 +6,3 @@ function Logo() {
     </div>
   );
 }
-
-export default Logo;

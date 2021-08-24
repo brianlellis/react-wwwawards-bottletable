@@ -1,6 +1,6 @@
 import Logo from '../components/general/Logo';
 
-function Header() {
+export default function Header() {
   return (
     <header className="App-header">
       <Logo />
@@ -18,5 +18,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
