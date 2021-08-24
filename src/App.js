@@ -1,6 +1,7 @@
 import './App.css';
 import Header                                   from './js/layout/Header';
 import { PinkZigZag, OrangeZigZag, BlueZigZag } from './js/components/general/ZigZags';
+import BuyButton                                from './js/components/general/BuyButton';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <OrangeZigZag />
       <BlueZigZag />
       <Header />
+      <BuyButton />
     </div>
   );
 }

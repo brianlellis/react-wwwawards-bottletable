@@ -62,6 +62,29 @@ body {
   float:    left;
 }
 
+/* Hover Styling is handled via JS as mouse_graphic disables pointer events */
+.buy_button {
+  height:           20vh;
+  width:            20vh;
+  text-align:       center;
+  border-radius:    50%;
+  background-color: #FFF;
+  color:            #000;
+  z-index:          2;
+  position:         fixed;
+  right:            15vw;
+  top:              35vh;
+}
+
+.buy_button > p {
+  transform:        scale(0.7, 1);
+  margin:           0;
+  line-height:      20vh;
+  font-family:      sans-serif;
+  font-weight:      900;
+  font-size:        2rem;
+}
+
 @keyframes Mouse-Background {
   0% {
     background-color: #000;
