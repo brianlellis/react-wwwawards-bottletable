@@ -7,15 +7,13 @@ export default function MouseGraphic() {
   });
 
   function pointer_coordinate(ev) {
-    const x         = ev.clientX, // clientX gives horizontal coordinate
-          y         = ev.clientY, // clientY gives vertical coordinates
-          mouse_ele = document.getElementById('mouse_graphic'),
+    const mouse_ele = document.getElementById('mouse_graphic'),
           height    = mouse_ele.offsetHeight / 2,
           width     = mouse_ele.offsetWidth / 2;
 
     setMousePosition({
-      left: ev.pageX - width, 
-      top:  ev.pageY - height
+      left: ev.clientX - width, 
+      top:  ev.clientY - height
     }); 
   }
 
